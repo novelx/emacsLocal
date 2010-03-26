@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\GNU\Emacs]
+"Emacs.geometry"="128x41"
+
+
+[HKEY_CLASSES_ROOT\*\shell]
+[HKEY_CLASSES_ROOT\*\shell\openwemacs]
+@="Edit with &Emacs"
+[HKEY_CLASSES_ROOT\*\shell\openwemacs\command]
+@="c:\\green\\emacs-23.1\\bin\\emacsclientw.exe --server-file=d:\\.emacs.d\\server\\server --alternate-editor=d:\\.emacs.d\\Emacs.bat -n \"%1\""
+[HKEY_CLASSES_ROOT\Directory\shell\openwemacs]
+@="Edit &with Emacs"
+[HKEY_CLASSES_ROOT\Directory\shell\openwemacs\command]
+@="c:\\green\\emacs-23.1\\bin\\emacsclientw.exe --server-file=d:\\.emacs.d\\server\\server --alternate-editor=d:\\.emacs.d\\Emacs.bat -n \"%1\""

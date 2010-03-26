@@ -1,0 +1,22 @@
+650,651c650,654
+<     (error "Tried to add an item of type %s to a list of items of type %s"
+<          (typep item) (oref this elem-type))))
+- ---
+>     (error "efc-list error: tried to add an item of type %s to a list of items of type %s"
+>          (if (object-p item)
+>              (object-class item)
+>            (type-of item))
+>          (oref this elem-type))))
+763c766
+<   (oset table (make-hash-table)))
+- ---
+>   (oset this table (make-hash-table)))
+770c773,776
+<          (typep value) (oref this elem-type))))
+- ---
+>          (if (object-p value)
+>              (object-class value)
+>            (type-of value))
+>          (oref this elem-type))))
+
+- --

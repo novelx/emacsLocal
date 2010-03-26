@@ -1,0 +1,15 @@
+# ignore everything
+#*
+*.*
+*.elc
+# except those
+!.gitconfig
+!.gitignore
+!.ecb-user-layouts.el
+!.emacs
+!.profile
+!.vimrc
+!.emacs.d/Emacs.bat
+!.emacs.d/Emacs.lnk
+!.emacs.d/elisp/*
+!.emacs.d/emacs_win32.reg
